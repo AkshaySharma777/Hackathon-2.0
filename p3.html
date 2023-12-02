@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMOVE DUPLICATES FROM SORTED ARRAY</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2>Sorted Input Array  = [<span id="arrDisplay"></span>]</h2> 
+    <h3 id="result">Post Removing Duplicates, Final Array = </h3> 
+    <script>
+      const arr = prompt("Enter the Array Inputs(All Inputs space separated)");
+      let arrDisplay = document.getElementById("arrDisplay");
+      let result = document.getElementById("result");
+      arrDisplay.innerHTML = arr;
+      let ipArr = arr.split(" ").map(Number);
+      let temp = [];
+      ipArr.forEach(function(item){
+        if(!temp.includes(item)){
+            temp.push(item)
+        }
+      });
+      result.innerHTML += `[${temp}]`;
+      console.log(temp)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINDING THE MISSING NUMBER</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2>Input Array  = [<span id="arrDisplay"></span>]</h2> 
+    <h3 id="result">Missing Number = </h3> 
+    <script>
+      const arr = prompt("Enter the Array Inputs(All Inputs space separated)");
+      let arrDisplay = document.getElementById("arrDisplay");
+      let result = document.getElementById("result");
+      arrDisplay.innerHTML=arr;
+      let ipArr = arr.split(" ").map(Number);
+      let temp = [];
+      for(let i=0;i<ipArr.length;i++){
+        if(ipArr[i] != (i+1)){
+          temp.push(i+1);
+        }
+      }
+      result.innerHTML += temp;
+      console.log(temp)
+    </script>
+</body>
+</html>

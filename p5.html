@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERMUTATION</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2>Input Array  = [<span id="arrDisplay"></span>]</h2> 
+    <h3 id="result">Output = </h3> 
+    <script>
+      const arr = prompt("Enter Array Inputs(All Inputs space separated)");
+      let arrDisplay = document.getElementById("arrDisplay");
+      let result = document.getElementById("result");
+      arrDisplay.innerHTML = arr;
+      let ipArr = arr.split(" ").map(Number);
+      let temp = [];
+      let n = ipArr.length;
+      let fact = 1;
+      for (let i = 1; i <= n; i++) {
+        fact *= i;
+      }
+      for(let a=0;a<fact;i++){
+
+      }
+      result.innerHTML += `[${temp}]`;
+      console.log(fact)
+    </script>
+</body>
+</html>
